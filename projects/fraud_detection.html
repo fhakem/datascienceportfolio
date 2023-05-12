@@ -1,0 +1,179 @@
+<!DOCTYPE HTML>
+<!--
+	Editorial by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>Farouk HAKEM's Portfolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../assets/css/main.css" />
+	<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>Data Scientist</strong> Portfolio</a>
+					<ul class="icons">
+						<li><a href="https://github.com/fhakem" target="_blank" rel="noopener noreferrer"
+								class="icon brands fa-github"><span class="label">Facebook</span></a></li>
+						<li><a href="https://www.linkedin.com/in/fhakem/" target="_blank" rel="noopener noreferrer"
+								class="icon brands fa-linkedin"><span class="label">Instagram</span></a></li>
+						<li><a href="#" target="_blank" rel="noopener noreferrer" class="icon brands fa-twitter"><span
+									class="label">Twitter</span></a></li>
+					</ul>
+				</header>
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>Fraud detection</h1>
+					</header>
+
+					<span class="image main"><img src="../images/fraud.png" alt="" /></span>
+
+					<p>Fraud is responsible for the loss of tens of billions of dollars each year worldwide. Typically,
+						companies use rules-based fraud detection applications that are not accurate enough and are out
+						of step with changing fraudster behaviors. With machine learning solutions, companies can
+						proactively prevent and detect online fraud with greater accuracy. These solutions help reduce
+						lost revenue, avoid brand damage, and deliver a frictionless online customer experience while
+						adapting to changing threat patterns.</p>
+					<p>I have worked on fraud detection in several of its aspects here are some key points.</p>
+
+					<hr class="major" />
+
+					<h2>ML Models for fraud detection</h2>
+
+					<p>The main difficulty lies in the class imbalance. According to the OSMP, fraudulent bank
+						transactions represent only 0.001% of transactions, while the amount of fraudulent transactions
+						represents 1% of transaction amounts.</p>
+
+					<h3>Cost-sensitive models</h3>
+					<p>Unlike classical prediction models which aim to minimize the loss function in order to reduce
+						misclassification, cost-sensitive methods aim to reduce the cost attributed to the whole model.
+						These methods assign a cost to each misclassification and a global cost is calculated.</p>
+
+					<h4>Cost-sensitive XGboost</h4>
+					<p>
+					<p>A decision tree is a sequence of rules applied on a dataset to separate the data into two or more
+						groups.</p>
+					</p>
+					<p>Unlike bagging, boosting is a sequence of the same algorithm that produces a new sample after
+						each training. Each new sample is generated from the hard-to-classify observations, which allows
+						for increasingly accurate predictions. XGboost is based on the gradient principle.</p>
+					<span class="image small"><img src="../images/bag.png" alt="" /></span>
+
+					<h3>Transparency of algorithms</h3>
+					<p>It is essential to explain how an ML model works, often referred to as "AI Explicable". ML
+						methods and models are generally black boxes. It is very difficult (if not impossible) to
+						explain to analysts why they got the score or decision they received. There are many approaches
+						to interpreting anti-fraud analytic indicators, including indicators based on local linear
+						estimates, generation of textual explanations and visual graphs. These are approximations that
+						can give users insight into the ML model and guide the fraud investigation process.</p>
+					<p>From this point of view, models using trees are particularly adapted to fraud detection because
+						the application of explicability methods, such as Shapley Values, is then simpler.</p>
+
+
+					<hr class="major" />
+
+					<h2>Data, more data !</h2>
+
+					<p>Having quality data is essential to obtain efficient ML models. This is even more the case in
+						fraud detection. Indeed, this problem is very complex from a business point of view because for
+						the same company and the same type of transaction, fraud can take place in different ways.</p>
+
+					<h3>Open data</h3>
+					<p>Open data are digital data whose access and use are left free to the users, which can be of
+						private origin but especially public.I often use this type of data to improve my models because
+						this information allows me to identify general trends in a market, which is complicated to do
+						with only the information available to the company for example <a target="_blank"
+							rel="noopener noreferrer" href="https://www.data.gouv.fr/fr/">DataGouv.fr</a>).</p>
+
+					<h3>Document analysis</h3>
+					<p>Extracting document data is a major issue in my fraud detection. Whether it comes from SWIFT data
+						or insurance contracts, these data contain a lot of information and often the modification of
+						these is a fraud pattern. OCR algorithms allow to read the content of the documents but it is
+						also necessary to add business knowledge to get a global meaning to the document.</p>
+
+					<h3>Web scrapers</h3>
+					<p>Web scraping is a technique of extracting content from websites, via a script or a program, in
+						order to transform it for use in another context. Since data is not always available in a
+						structured way, I also developed scrapers to extract the data I needed.</p>
+
+					<hr class="major" />
+
+					<h2>Conclusion</h2>
+					<p>Fraud detection by ML is a domain that I particularly appreciate because it calls upon many Data
+						Science techniques and also requires a lot of business knowledge. The models I developed allowed
+						me to acquire the subtleties of this field of machine learning and to improve my inventiveness
+						to have the best possible results</p>
+
+				</section>
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="../index.html">Homepage</a></li>
+
+						<li>
+							<span class="opener">Projects</span>
+							<ul>
+								<li><a href="chatbots.html">Chatbots</a></li>
+								<li><a href="fraud_detection.html">Fraud Detection</a></li>
+								<li><a href="football_tracking.html">Football tracking</a></li>
+								<li><a href="nn_playground.html">Neural Network Playground</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2>Contact</h2>
+					</header>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a
+								href="mailto:hakem.farouk@gmail.com">hakem.farouk@gmail.com</a></li>
+						<li class="icon solid fa-phone">(+33) 07 81 56 13 66</li>
+						<li class="icon solid fa-home">Paris, FRANCE<br /></li>
+					</ul>
+				</section>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../assets/js/jquery.min.js"></script>
+	<script src="../assets/js/browser.min.js"></script>
+	<script src="../assets/js/breakpoints.min.js"></script>
+	<script src="../assets/js/util.js"></script>
+	<script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
