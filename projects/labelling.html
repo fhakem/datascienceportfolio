@@ -43,51 +43,46 @@
 					</header>
 
 					<span class="image main">
-						<img src="../images/pic02.jpg" alt="" />
-						<a href="https://playground.tensorflow.org/">Tensorflow playground</a>
+						<img src="../images/labelstudio.png" alt="" />
+						<a href="https://labelstud.io/">Label Studio</Label></a>
 					</span>
 
-					<p>In the context of a call for projects from a large European energy group, I developed a platform
-						to raise awareness of the energy challenges of Deep Learning model training among AI players.
+					<p>Obtaining annotated data is a key issue in the development of any machine learning algorithm. As
+						shown in this diagram, labeling is the most time-consuming task in a machine learning project,
+						so its optimization is essential.
 					</p>
 
-					<hr class="major" />
+					<span class="image small"><img src="../images/timeml.png" alt="" /></span>
 
-					<h2>Principle and objective</h2>
-					<p>The user plays the role of an engineer who has to port an algorithm from
-						R&D and based on a neural network. He has the database and the global structure of the
-						neural network, as well as objectives in the form of value ranges.</p>
-
-					<hr class="major" />
-
-					<h2>How to play ?</h2>
-					<p>To achieve its objectives, it can play on 4 variables:</p>
-					<ul>
-						<li>The choice of hardware platform defined by the type of processor, amount of memory, etc. The
-							platform has a cost and of course will constrain performance.</li>
-						<li>A scale parameter that defines the "depth" of each layer.</li>
-						<li>A parameter on the resolution of the input images (from the camera).</li>
-						<li>The accuracy of the representation of the numbers in the network to make the calculations.
-						</li>
-					</ul>
-					<p>To win, it must find a configuration of these 4 parameters that fall within the ranges
-						of the following 4 performance criteria:</p>
-					<ul>
-						<li>FPS: number of frames per second processed by the onboard system.</li>
-						<li>Energy: Frugality is one of the three pillars of trusted AI.</li>
-						<li>Cost: A product only makes sense if it is economically viable.</li>
-						<li>Clarification: the overall performance of the network in the sense of the effectiveness in
-							fulfilling its task.</li>
-					</ul>
-					<p></p>
+					<p>In our case, it is about annotating sentences that customers have written or said to the chatbot.
+						Until now, the annotation was done on spreadsheets. It goes without saying that this procedure,
+						very often laborious, was not facilitated by the tools made available to the annotators. This is
+						why I decided to set up an annotation tool.</p>
 
 					<hr class="major" />
 
-					<h2>Implementation</h2>
-					<p>The game was developed in Vue.JS (including HTML/CSS and JS). The computation times and costs
-						according to the platforms used were obtained by making API calls to the group's hardware
-						platform and using different neural network architectures, so the game faithfully represents
-						reality.</p>
+					<h2>Architecture of the solution</h2>
+					<p>After a benchmark of different open-source solutions, I chose Label Studio. This tool allows to
+						perform different types of labeling with many data formats. It is also possible to integrate
+						Label Studio with machine learning models to provide predictions for annotations, or to perform
+						continuous active learning. The diagram below describes how Label Studio will fit into a machine
+						learning environment :</p>
+
+					<span class="image small"><img src="../images/awstudio.png" alt="" /></span>
+
+					<hr class="major" />
+
+					<h2>Using the platform</h2>
+					<p>Label Studio is very quick to learn, both for the administrator in charge of creating annotation
+						projects and for the annotators. First of all, each new annotator has to create an account,
+						which allows to secure the access and also to control the quality of annotation of each person
+						afterwards.</p>
+
+					<p>The annotator sees a sentence displayed, above it he can choose which entities are in the
+						sentence and then delimit their locations by highlighting with the mouse, below the sentence he
+						sees a list of intentions with a prediction already made. Thus the annotation becomes in the
+						vast majority of cases a verification since the algorithm already has a high accuracy.</p>
+
 
 				</section>
 
