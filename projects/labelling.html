@@ -83,6 +83,32 @@
 						sees a list of intentions with a prediction already made. Thus the annotation becomes in the
 						vast majority of cases a verification since the algorithm already has a high accuracy.</p>
 
+					<hr class="major" />
+
+					<h2>Labelling strategy</h2>
+					<p>It is important to set up an annotation strategy because annotating sentences at random only
+						increases the representation disparities present in the initial dataset. In order to increase
+						the annotation speed, it is possible to use the predictions made by a machine learning model.
+						This type of strategy is called "active learning" and is generally articulated as follows:</p>
+
+					<ul>
+						<li>The first thing to do is to manually label a small subsample of this data</li>
+						<li>Once we have a small amount of labeled data, we need to train the model on that data. The
+							model will not be perfect, but it will tell us which data should be labeled first to improve
+							it</li>
+						<li>After the model is created, it is used to predict the class of each remaining unlabeled data
+							point</li>
+						<li>A score is calculated for each unlabeled data point based on the model prediction</li>
+						<li>Once the best approach has been chosen to prioritize labeling, this process can be repeated
+							iteratively: a new model can be trained on a new labeled dataset, which has been labeled
+							based on the priority score. Once the new model has been trained on the subset of data, the
+							unlabeled data can be submitted to the model to update the prioritization scores to continue
+							labeling. In this way, the labeling strategy can continue to be optimized as the models
+							improve.</li>
+					</ul>
+					<p>This methodology allows to increase the size of the dataset in a very efficient way but what is
+						even more important is that by targeting the most interesting data to annotate we increase the
+						accuracy of the model at a lower cost.</p>
 
 				</section>
 
